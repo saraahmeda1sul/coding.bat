@@ -1,0 +1,5 @@
+public int makeChocolate(int small, int big, int goal) {
+    int useBig = Math.min(big, goal / 5);
+    int rem = goal - useBig* 5;
+  return (small >= rem) ? rem :-1;
+}
